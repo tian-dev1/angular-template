@@ -31,7 +31,6 @@ export class InfoPaginaService {
     this.http.get('https://angular-ab66f-default-rtdb.firebaseio.com/equipo.json').subscribe((resp: any) => {
       this.cargada = true;
       this.equipo= resp;
-      console.log(resp);
     });
   }
 
