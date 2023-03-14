@@ -63,7 +63,7 @@ export class ProductosService {
 
     this.productos.forEach(prod =>{
       
-      const categoriaLower = prod.titulo?.toLowerCase();
+      const categoriaLower = prod.categoria?.toLowerCase();
       const tituloLower = prod.titulo?.toLowerCase();
 
       if(categoriaLower != undefined && categoriaLower.indexOf(termino)>= 0 || tituloLower!= undefined && tituloLower.indexOf(termino)>= 0 ){
